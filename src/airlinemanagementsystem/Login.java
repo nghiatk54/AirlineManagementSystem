@@ -3,6 +3,7 @@ package airlinemanagementsystem;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.sql.*;
 
 
 public class Login extends JFrame implements ActionListener {
@@ -56,7 +57,28 @@ public class Login extends JFrame implements ActionListener {
     {
         if (ae.getSource() == submit)
         {
+            String username = tfusername.getText();
+            String password = tfpassword.getText();
             
+            try {
+                Conn c = new Conn();
+                
+                String query = "select * from login where username = '"+username+"' and password = '"+password+"'";
+                
+                ResultSet rs = c.s.executeQuery(query);
+                
+                if (rs.next())
+                {
+                    System.out.println("Valid");
+                    setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Username or Password");
+                    setVisible(false);
+                }
+            } catch (Exception e)
+            {
+                e.printStackTrace();
+            }
         } else if (ae.getSource() == close)
         {
             setVisible(false);

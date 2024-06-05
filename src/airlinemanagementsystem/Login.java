@@ -69,7 +69,7 @@ public class Login extends JFrame implements ActionListener {
                 
                 if (rs.next())
                 {
-                    System.out.println("Valid");
+                    new Home();
                     setVisible(false);
                 } else {
                     JOptionPane.showMessageDialog(null, "Invalid Username or Password");

@@ -21,3 +21,19 @@ CREATE TABLE passenger (name VARCHAR(20), nationality VARCHAR(20), phone VARCHAR
 
 // Select data from table passenger
 SELECT * FROM passenger;
+
+// Create table flight
+CREATE TABLE flight(f_code VARCHAR(20), f_name VARCHAR(20), source VARCHAR(40), destination VARCHAR(40));
+
+// Describe schema table flight
+DESCRIBE flight;
+
+// Insert data into table flight
+INSERT INTO flight VALUES ("1001", "AI-1212", "Ha Noi", "Ninh Binh");
+INSERT INTO flight VALUES ("1002", "AI-1453", "Ha Noi", "Da Nang");
+INSERT INTO flight VALUES ("1003", "AI-1112", "Ho Chi Minh", "Can Tho");
+INSERT INTO flight VALUES ("1004", "AI-3222", "Ha Noi", "Quy Nhon");
+INSERT INTO flight VALUES ("1005", "AI-1214", "Ha Noi", "Ho Chi Minh");
+
+// Select all data from table flight
+SELECT * FROM flight;

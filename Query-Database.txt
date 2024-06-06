@@ -1,0 +1,23 @@
+// Create databse
+CREATE DATABASE airlinemanagementsystem;
+
+// Connect database
+USE airlinemanagementsystem;
+
+// Create table login
+CREATE TABLE login(username VARCHAR(20), password VARCHAR(20));
+
+// Insert data into table login
+INSERT INTO login VALUES("admin", "admin");
+
+// Show all tables in database
+SHOW TABLES;
+
+// Select data from table login
+SELECT * FROM login;
+
+// Create table passenger
+CREATE TABLE passenger (name VARCHAR(20), nationality VARCHAR(20), phone VARCHAR(15), address VARCHAR(50), id VARCHAR(20), gender VARCHAR(20));
+
+// Select data from table passenger
+SELECT * FROM passenger;

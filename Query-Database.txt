@@ -37,3 +37,9 @@ INSERT INTO flight VALUES ("1005", "AI-1214", "Ha Noi", "Ho Chi Minh");
 
 // Select all data from table flight
 SELECT * FROM flight;
+
+// Create table reservation
+CREATE TABLE reservation(PNR VARCHAR(15), TICKET VARCHAR(20), id VARCHAR(20), name VARCHAR(20), nationality VARCHAR(30), flightname VARCHAR(15), flightcode VARCHAR(20), src VARCHAR(30), des VARCHAR(30), ddate VARCHAR(30));
+
+// Select all data from table reservation
+SELECT * FROM reservation;

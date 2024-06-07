@@ -63,7 +63,7 @@ public class AddCustomer extends JFrame implements ActionListener{
         // Gender field
         ButtonGroup genderGroup = new ButtonGroup();
         
-        JLabel lblgender = new JLabel("Address");
+        JLabel lblgender = new JLabel("Gender");
         lblgender.setBounds(60, 280, 150, 25);
         lblgender.setFont(new Font("Tahoma", Font.PLAIN, 16));
         add(lblgender);

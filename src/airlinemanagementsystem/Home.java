@@ -33,20 +33,27 @@ public class Home extends JFrame implements ActionListener {
         JMenu details = new JMenu("Details");
         menuBar.add(details);
         
+        // Item flight details
         JMenuItem flightDetails = new JMenuItem("Flight Details");
         flightDetails.addActionListener(this);
         details.add(flightDetails);
         
+        // Item customer details
         JMenuItem customerDetails = new JMenuItem("Add Customer Details");
         customerDetails.addActionListener(this);
         details.add(customerDetails);
         
+        // Item book flight
         JMenuItem bookFlight = new JMenuItem("Book Flight");
+        bookFlight.addActionListener(this);
         details.add(bookFlight);
         
+        // Item Journey Details
         JMenuItem journeyDetails = new JMenuItem("Journey Details");
+        journeyDetails.addActionListener(this);
         details.add(journeyDetails);
         
+        // Item cancel ticket
         JMenuItem ticketCancellation = new JMenuItem("Cancel Ticket");
         details.add(ticketCancellation);
         
@@ -54,6 +61,7 @@ public class Home extends JFrame implements ActionListener {
         JMenu ticket = new JMenu("Ticket");
         menuBar.add(ticket);
 
+        // Item Boarding pass
         JMenuItem boardingPass = new JMenuItem("Boarding Pass");
         ticket.add(boardingPass);
         
@@ -71,6 +79,10 @@ public class Home extends JFrame implements ActionListener {
             new AddCustomer();
         } else if (text.equals("Flight Details")){
             new FlightInfo();
+        } else if (text.equals("Book Flight")) {
+            new BookFlight();
+        } else if (text.equals("Journey Details")) {
+            new JourneyDetails();
         }
     }
 

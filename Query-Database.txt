@@ -43,3 +43,6 @@ CREATE TABLE reservation(PNR VARCHAR(15), TICKET VARCHAR(20), id VARCHAR(20), na
 
 // Select all data from table reservation
 SELECT * FROM reservation;
+
+// Create table cancel
+CREATE TABLE cancel(pnr VARCHAR(20), name VARCHAR(40), cancelno VARCHAR(20), fcode VARCHAR(20), ddate VARCHAR(30));
